@@ -1,5 +1,5 @@
-//Cogemos el elemento por su Id
-let title = document.getElementById("title");
+//Cogemos el elemento por su id
+let title = document.getElementByid("title");
 
 //Cogemos todos los elementos que tienen el mismo class
 let paragraphs = document.getElementsByClassName("paragraph");
