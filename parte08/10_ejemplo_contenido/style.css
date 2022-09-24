@@ -2,22 +2,73 @@
     padding: 0;
     margin: 0;
 }
-#content{
-    background-color: rgb(180, 0, 0);
+
+#titulo {
+    
+    
+    text-align: center;
+    padding: 40px;
+    background-color: #cc5557;
+}
+#titulo2 {
+    
+    
+    text-align: center;
+    padding: 40px;
+    background-color: green;
+}
+.content{
+    background-color: #cc5557;
     display: flex;
     justify-content: space-around;
 
 }
+.content2{
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
 
+}
 .column{
 
     padding: 4vh;
+    
 }
 
 .title{
+
     text-align: center;
+     
+}
+
+.intros{
+    background: white;
+    padding: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: inline-block;
+    border-radius: 10px;
+    color: red;
+}
+
+.intros2{
+    background: white;
+    padding: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: inline-block;
+    border-radius: 10px;
+    color: green;
 }
 
 .paragraph {
     text-align: center;
-}
+    margin-top: 20px;
+    
+}   
+
+.paragraph2 {
+    text-align: left;
+    margin-top: 20px;
+      
+}   

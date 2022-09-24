@@ -17,6 +17,21 @@
          * 3. Para poder modificar la mitad de la palabra (mayúsculas), necesitarás primero obtener una cadena que sólo tenga esa parte
          * 4. Una vez que tengamos la mitad de la palabra en mayúsculas, tendrás que reemplazar una subcadena por otra
          */
+
+         let palabra ='nakama';
+         let NumeroLetras = palabra.length;
+         console.log (NumeroLetras)
+
+         let subcadena = palabra.substring(0, 3);
+         console.log (subcadena)
+         
+
+         let reemplazado = palabra.replaceAll (subcadena,subcadena.toUpperCase());
+         console.log (reemplazado)
+
+
+         
+         
     </script>
 </body>
 

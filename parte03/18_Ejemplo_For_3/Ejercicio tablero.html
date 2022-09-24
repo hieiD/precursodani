@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eiercicio While</title>
+</head>
+
+<body>
+    <script>
+        let O = 'O'; //instancias la variable O con el caracter "O"
+        let X = 'X'; //instancias la variable X con el caracter "X"
+
+        for (let i = 1; i <= 8; i = i + 1) { //Estamos contando las líneas hasta 8 (1, 2, 3, 4, 5, 6, 7, 8)
+          let result = ''; //instancias la cadena de texto vacía
+
+          for (let j = 1; j <= 8; j = j + 1) { //Estamos contando las letras
+
+            if (i % 2 == 0) { //Comprobamos que la línea sea par (las líneas 2, 4, 6, 8)
+              if (j % 2 == 0) { //Comprobamos que la letra sea par
+                 result = result + O;  // '' + 'O'
+              } else { //Comprobamos que la letra sea impar
+                result = result + X ; // '' + 'X'
+              }
+            } else {//Líneas impares
+              if (j % 2 == 0) { //Comprobamos que la letra sea par
+                result = result + X; // '' + 'X'
+              } else { //Comprobamos que la letra sea impar
+                result = result + O;  // '' + 'O'
+              }
+            }
+
+          }
+          console.log(result); //imprime una línea del resultado 'XOXOXOXO' o 'OXOXOXOX'
+        }
+
+    
+    </script>
+</body>
+
+</html>

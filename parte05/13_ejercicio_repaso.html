@@ -24,6 +24,36 @@
         * 9	2
         * 10 1
         */
+
+        let numeros = [0,0,0,0,0,0,0,0,0,0,0]; //Inicializar a 0 los valores de las posiciones del 0 al 10 del array (tiene 11 huecos)
+
+        for (i = 0;i < 10;i++) { //Preguntar al usuario 10 veces
+
+            let respuesta = parseInt(prompt('introduce un valor entre 0 y 10')); //Preguntar al usuario un valor
+
+            if (respuesta > 10) //Si la respuesta es mayor a 10 ejecuta el contenido de esta condición
+            {
+                console.log('ese numero es incorrecto')
+            }
+            else if (respuesta < 0) //Si la respuesta es menor a 0 ejecuta el contenido de esta condición
+            {
+                for (j = 0; j < numeros.length;j++){ //Recorre el array de 0 hasta la longitud del array que es 11
+                    console.log(j + ' ' + numeros[j]); //Muestra la posición en la que se encuentra el bucle (que es la posición del array) y el valor que hay en la posición del array
+                }                
+            }
+            else //Si la respuesta no cumple con las condiciones anteriores, entra aquí
+            {
+                 // Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array
+                numeros[respuesta]= numeros[respuesta]+1; //Se suma +1 al valor que hay dentro de la posición del array que el usuario ha dado. Ejemplo: El usuario escribe 5 ->  [0,0,0,0,0,1,0,0,0,0,0]
+            }
+
+        }
+
+       
+
+
+
+        
     </script>
 </body>
 
